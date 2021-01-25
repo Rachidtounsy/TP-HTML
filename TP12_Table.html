@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP  12 </title>
+    <style>
+        .T1
+        {
+           width: 20%;
+          /* background-color:rgb(169, 169, 169) ;
+           border:10px solid green; 
+           border:10px double green; */
+        }
+
+        .T1 tr
+        {
+           /* background-color:red ;*/
+            text-align: center;
+            margin-top:5px;
+           
+        }
+        .td1{
+            border:5px double rgb(189, 255, 6);
+            margin:0;
+        }
+        
+         .td1:nth-child(2n)
+         {
+            background-color: rgb(177, 34, 58);
+         }
+         .td1:nth-child(2n+1)
+         {
+            background-color: rgb(34, 177, 67);
+         }
+         /*-----------------------------------------*/
+         .td2{
+            border:1px solid rgb(189, 255, 6);
+            margin:0;
+        }
+         .tr2:nth-child(2n)
+         {
+            background-color: rgb(177, 34, 58);
+         }
+         .tr2:nth-child(2n+1)
+         {
+            background-color: rgb(34, 177, 67);
+         } 
+         /*---------------------------------------------------------------------*/
+        li:nth-child(2n)
+         {
+            background-color: rgb(177, 34, 58);
+            width: 50%;
+         }
+         li:nth-child(2n+1)
+         {
+            background-color: rgb(34, 177, 67);
+            width: 100%;
+            margin: 2px;
+         }
+    </style>
+</head>
+<body>
+  
+    
+    <table>
+        <colgroup>
+            <col style="width: 100px; color:rgb(51, 153, 90)"> 
+            </colgroup>
+            <thead>
+                <tr>
+                    <th> Column 1 </th>
+                    <th> Column 1   </th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td> Cell 1.1 </td> <td> Cell 1.2</td>
+                    </tr>
+                    <tr>
+                        <td> Cell 2.1 </td> <td> Cell 2.2</td>
+                    </tr>
+           </tbody>
+           <tfoot>
+               <tr>
+                    <td> Footer 1 </td>
+                     <td> Footer 2 </td>
+                </tr>
+           </tfoot>
+          
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <td> Contact :</td>
+            <td>
+               <table>
+                  <tr>
+                      <td>
+                          First Name 
+                      </td>
+                      <td>
+                      Last Name 
+                    </td>
+                  </tr>
+               </table>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1" cellspacing="10" cellpadding="10">
+        <thead>
+            <tr> 
+                <th> Nom   </th>
+                <th> Age   </th>
+
+
+
+
+                
+            </tr>
+        </thead>
+      <tbody>
+        <tr>
+            <td>Rachid </td>
+            <td> 23 </td>
+        </tr>
+        <tr>
+            <td>Amine  </td>
+            <td> 18 </td>
+        </tr>
+      </tbody>
+      <tfoot>
+       <tr> 
+           <td colspan="2"> list de personne</td>
+        
+       </tr>
+    </tfoot>
+    </table>
+    
+    <hr>
+    <table border="1" cellspacing="10" cellpadding="10">
+        <thead>
+            <tr> 
+                <th> Nom   </th>
+                <th> Age   </th>
+            </tr>
+        </thead>
+      <tbody>
+        <tr>
+            <td rowspan="2">Rachid </td>
+            <td> 23 </td>
+        </tr>
+        <tr>
+           
+            <td> 18 </td>
+        </tr>
+      </tbody>
+      <tfoot>
+       <tr> 
+           <td colspan="2"> list de personne</td>
+        
+       </tr>
+    </tfoot>
+    </table>
+    <hr>
+    <table border="1" cellpadding="10" cellspacing="0">
+        
+        <tr> 
+            <td>   Cell[1.1 ] </td>
+            <td colspan="2">  Cell[2.1 ] </td>
+        </tr>
+        <tr>
+             <td> Cell[1.2 ] </td>
+             <td rowspan="2">Cell[2.2 ]  </td> 
+              <td>Cell[3.2 ]   </td> 
+        </tr>
+        <tr> 
+            <td> Cell[2.3 ] </td>
+          
+             <td>Cell[2.3]   </td> 
+         </tr>
+    </table>
+    <hr>
+    <table border="2" cellspacing="0" cellpadding="15"  >
+    <tr>
+        <td rowspan="3" > 0</td>
+        <td> 0</td>
+        <td> 0</td>
+    </tr>
+    <tr>
+    
+        <td> 1</td>
+        <td>1 </td>
+    </tr>
+    <tr>
+       
+        <td> 2</td>
+        <td> 2</td>
+    </tr>
+    </table>
+
+    <hr>
+    <table border="2" cellspacing="0" cellpadding="15"  >
+    <tr>
+        <td > 0</td>
+        <td> 0</td>
+        <td > 0</td>
+    </tr>
+    <tr>
+    
+        <td> 1</td>
+        <td>1 </td>
+        <td>1 </td>
+    </tr>
+    <tr>
+       
+       
+        <td colspan="3" > 2</td>
+      
+    </tr>
+    </table>
+
+    <hr>
+    <table border="2" cellspacing="0" cellpadding="15"  >
+    <tr>
+        <td> 0</td>
+        <td> 0</td>
+        <td  rowspan="3"> 0</td>
+    </tr>
+    <tr>
+    
+        <td> 1</td>
+        <td>1 </td>
+    </tr>
+    <tr>
+       
+        <td> 2</td>
+        <td> 2</td>
+    </tr>
+    </table>
+     <br>
+    <hr><hr>
+    
+<!------------------------------------------------------------------>
+
+  <table rules="rows"  cellspacing="0" cellpadding="15">
+      <tr> 
+          <td> A</td>
+          <Td> B</Td>
+          <td> C</td>
+      </tr>
+      <tr> 
+        <td> A</td>
+        <Td> B</Td>
+        <td> C</td>
+    </tr>
+    <tr> 
+        <td> A</td>
+        <Td> B</Td>
+        <td> C</td>
+    </tr>
+  </table>
+  <hr>
+  
+<!------------------------------------------------------------------>
+
+  <table rules="cols"  cellspacing="0" cellpadding="15">
+      <tr> 
+          <td> A</td>
+          <Td> B</Td>
+          <td> C</td>
+      </tr>
+      <tr> 
+        <td> A</td>
+        <Td> B</Td>
+        <td> C</td>
+    </tr>
+    <tr> 
+        <td> A</td>
+        <Td> B</Td>
+        <td> C</td>
+    </tr>
+  </table>
+  
+<!------------------------------------------------------------------>
+
+  <hr>
+  <table rules="all"  cellspacing="0" cellpadding="15">
+      <tr> 
+          <td> A</td>
+          <Td> B</Td>
+          <td> C</td>
+      </tr>
+      <tr> 
+        <td> A</td>
+        <Td> B</Td>
+        <td> C</td>
+    </tr>
+    <tr> 
+        <td> A</td>
+        <Td> B</Td>
+        <td> C</td>
+    </tr>
+  </table>
+  
+<!------------------------------------------------------------------>
+
+  <hr>
+  <table border="20"  cellspacing="0" cellpadding="15"   style="background-color:red">
+      <tr > 
+          <td> A</td>
+          <Td> B</Td>
+          <td> C</td>
+      </tr>
+      <tr > 
+        <td> A</td>
+        <Td> B</Td>
+        <td> C</td>
+    </tr>
+    <tr > 
+        <td> A</td>
+        <Td> B</Td>
+        <td> C</td>
+    </tr>
+  </table>
+  
+<!------------------------------------------------------------------>
+
+  <br> <hr>
+  <table  align="right" border="2"  cellspacing="0" cellpadding="15"   style="background-color:rgb(0, 255, 51)">
+    <tr> 
+        <td> A</td>
+        <Td> B</Td>
+        <td> C</td>
+    </tr>
+    <tr> 
+      <td> A</td>
+      <Td> B</Td>
+      <td> C</td>
+  </tr>
+  <tr> 
+      <td> A</td>
+      <Td> B</Td>
+      <td> C</td>
+  </tr>
+</table>
+
+<hr> <br><br>
+<!------------------------------------------------------------------>
+
+  <table width="100%" style="text-align: center;" border="2"  cellspacing="2" cellpadding="15"   style="background-color:rgb(139, 153, 200)">
+    <tr> 
+        <td> A</td>
+        <td> B</td>
+        <td> C</td>
+    </tr>
+    <tr> 
+      <td> A</td>
+      <td> B</td>
+      <td> C</td>
+  </tr>
+  <tr> 
+      <td> A</td>
+      <Td> B</Td>
+      <td> C</td>
+  </tr>
+</table>
+
+
+<hr> <br><br>
+<!------------------------------------------------------------------>
+
+  <table class="T1"    cellspacing="0" cellpadding="15"  >
+    <tr class="tr1">   <td class="td1"> A</td> <td class="td1" > B</td>  <td class="td1"> C</td>  <td class="td1"> A</td> <td class="td1" > B</td>  <td class="td1"> C</td></tr>
+    <tr class="tr1">   <td class="td1"> A</td> <td class="td1" > B</td>  <td class="td1"> C</td>  <td class="td1"> A</td> <td class="td1" > B</td>  <td class="td1"> C</td></tr>
+    <tr class="tr1">   <td class="td1"> A</td> <td class="td1" > B</td>  <td class="td1"> C</td>  <td class="td1"> A</td> <td class="td1" > B</td>  <td class="td1"> C</td></tr>
+    <tr class="tr1">   <td class="td1"> A</td> <td class="td1" > B</td>  <td class="td1"> C</td>  <td class="td1"> A</td> <td class="td1" > B</td>  <td class="td1"> C</td></tr>
+    <tr class="tr1">   <td class="td1"> A</td> <td class="td1" > B</td>  <td class="td1"> C</td>  <td class="td1"> A</td> <td class="td1" > B</td>  <td class="td1"> C</td></tr>
+    <tr class="tr1">   <td class="td1"> A</td> <td class="td1" > B</td>  <td class="td1"> C</td>  <td class="td1"> A</td> <td class="td1" > B</td>  <td class="td1"> C</td></tr>
+    <tr class="tr1">   <td class="td1"> A</td> <td class="td1" > B</td>  <td class="td1"> C</td>  <td class="td1"> A</td> <td class="td1" > B</td>  <td class="td1"> C</td></tr>
+    <tr class="tr1">   <td class="td1"> A</td> <td class="td1" > B</td>  <td class="td1"> C</td>  <td class="td1"> A</td> <td class="td1" > B</td>  <td class="td1"> C</td></tr>
+    <tr class="tr1">   <td class="td1"> A</td> <td class="td1" > B</td>  <td class="td1"> C</td>  <td class="td1"> A</td> <td class="td1" > B</td>  <td class="td1"> C</td></tr>
+
+</table>
+<hr> <br><br>
+<!------------------------------------------------------------------>
+
+  <table class="T2"    cellspacing="0" cellpadding="15"  >
+   
+    <tr class="tr2">   <td class="td2"> A</td> <td class="td2" > B</td>  <td class="td2"> C</td>  <td class="td2"> A</td> <td class="td2" > B</td>  <td class="td2"> C</td></tr>
+    <tr class="tr2">   <td class="td2"> A</td> <td class="td2" > B</td>  <td class="td2"> C</td>  <td class="td2"> A</td> <td class="td2" > B</td>  <td class="td2"> C</td></tr>
+    <tr class="tr2">   <td class="td2"> A</td> <td class="td2" > B</td>  <td class="td2"> C</td>  <td class="td2"> A</td> <td class="td2" > B</td>  <td class="td2"> C</td></tr>
+    <tr class="tr2">   <td class="td2"> A</td> <td class="td2" > B</td>  <td class="td2"> C</td>  <td class="td2"> A</td> <td class="td2" > B</td>  <td class="td2"> C</td></tr>
+    <tr class="tr2">   <td class="td2"> A</td> <td class="td2" > B</td>  <td class="td2"> C</td>  <td class="td2"> A</td> <td class="td2" > B</td>  <td class="td2"> C</td></tr>
+    <tr class="tr2">   <td class="td2"> A</td> <td class="td2" > B</td>  <td class="td2"> C</td>  <td class="td2"> A</td> <td class="td2" > B</td>  <td class="td2"> C</td></tr>
+</table>
+<!------------------------------------------------------>
+
+
+<table class="T2"    cellspacing="0" cellpadding="15"  >
+    <colgroup>
+        <col width="150px;"> 
+        <col width="200px;"> 
+        <col width="300px;"> 
+    </colgroup>
+    <tr class="tr2">   <td class="td2"> A</td> <td class="td2" > B</td>  <td class="td2"> C</td>  </tr>
+    <tr class="tr2">   <td class="td2"> A</td> <td class="td2" > B</td>  <td class="td2"> C</td>  </tr>
+    <tr class="tr2">   <td class="td2"> A</td> <td class="td2" > B</td>  <td class="td2"> C</td>  </tr>
+    <tr class="tr2">   <td class="td2"> A</td> <td class="td2" > B</td>  <td class="td2"> C</td>  </tr> 
+    <tr class="tr2">   <td class="td2"> A</td> <td class="td2" > B</td>  <td class="td2"> C</td>  </tr>
+    <tr class="tr2">   <td class="td2"> A</td> <td class="td2" > B</td>  <td class="td2"> C</td>  </tr>
+</table>
+
+
+
+
+
+
+<!---------------------------------->
+<ul>
+    <li> elemen 1  </li><li> elemen 1  </li><li> elemen 1  </li><li> elemen 1  </li>
+    <li> elemen 1  </li> <li> elemen 1  </li><li> elemen 1  </li><li> elemen 1  </li>
+    <li> elemen 1  </li><li> elemen 1  </li><li> elemen 1  </li><li> elemen 1  </li>
+    <li> elemen 1  </li><li> elemen 1  </li><li> elemen 1  </li><li> elemen 1  </li>
+    <li> elemen 1  </li><li> elemen 1  </li><li> elemen 1  </li><li> elemen 1  </li>
+</ul>
+<!-------------------------------------------------------------------------->
+<table cellspacing="2px" cellpadding="2px" rules="all" style="border:solid 1px black">
+<caption> Titre du Tableau </caption>
+<colgroup>
+    <col width="150px;"> 
+    <col width="200px;"> 
+</colgroup>
+<thead>
+    <tr> 
+        <th> Titer Col 1 </th>
+        <th> Titer Col 2 </th>
+    </tr>
+</thead>
+<tfoot>
+    <tr>
+        <td> Valeur Footer 1 </td>
+        <td> Valeur Footer 2 </td>
+    </tr>
+</tfoot>
+<tbody>
+    <tr> 
+        <td> Valeur 1 </td>
+        <td> Valeur 2 </td>
+    </tr>
+    <tr> 
+        <td> Valeur 1 </td>
+        <td> Valeur 2 </td>
+    </tr>
+    <tr> 
+        <td> Valeur 1 </td>
+        <td> Valeur 2 </td>
+    </tr>
+</tbody>
+</table>
+</body>
+</html>
